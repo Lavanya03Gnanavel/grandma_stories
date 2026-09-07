@@ -1,0 +1,36 @@
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  application:
+    name: api-gateway
+  codec:
+    max-in-memory-size: 25MB
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/users/**,/api/auth/**
+        - id: story-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/stories/**
+        - id: narration-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/narrations/**
+        - id: media-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/media/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: narration-service
+  datasource:
+    url: jdbc:postgresql://localhost:5433/grandmastories
+    username: grandma
+    password: grandma123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+tts:
+  provider: mock
+  elevenlabs:
+    api-key: ${ELEVENLABS_API_KEY:}
+    voice-en: ${ELEVENLABS_VOICE_EN:}
+    voice-ta: ${ELEVENLABS_VOICE_TA:}

@@ -1,0 +1,51 @@
+{
+  "appName": "Grandma's Stories",
+  "tagline": "Stories told with love, like only Grandma can",
+  "home": {
+    "title": "My Stories",
+    "empty": "No stories yet. Add your first story!",
+    "addStory": "Add New Story"
+  },
+  "addStory": {
+    "title": "Add a Story",
+    "storyTitle": "Story Title",
+    "storyTitlePlaceholder": "Enter story title...",
+    "storyContent": "Story Content",
+    "storyContentPlaceholder": "Paste or type your story here...",
+    "language": "Story Language",
+    "languageHint": "Grandma will narrate in the selected language",
+    "english": "English",
+    "tamil": "Tamil",
+    "submit": "Save & Narrate",
+    "saving": "Saving...",
+    "uploadDocument": "Upload Story File",
+    "chooseFile": "Choose PDF or DOCX",
+    "fileHint": "Story text will be read from this file, page by page",
+    "removeFile": "Remove & paste text instead",
+    "orDivider": "OR paste text below",
+    "missingContentTitle": "Add a story first",
+    "missingContentMessage": "Upload a PDF/DOCX file or paste your story text."
+  },
+  "reader": {
+    "narratedBy": "Narrated by Grandma",
+    "page": "Page",
+    "of": "of",
+    "play": "Play",
+    "pause": "Pause",
+    "next": "Next",
+    "previous": "Previous",
+    "generating": "Translating and preparing Grandma's voice..."
+  },
+  "settings": {
+    "title": "Settings",
+    "narrationLanguage": "Default Narration Language",
+    "narrationHint": "Grandma will use this language when you open a story",
+    "about": "About",
+    "aboutText": "Upload stories and listen to them narrated in a warm grandmother's voice."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "retry": "Retry"
+  }
+}
